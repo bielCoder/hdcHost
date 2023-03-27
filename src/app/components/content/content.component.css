@@ -1,0 +1,125 @@
+/* Configurando o primeiro conteudo (banner) */
+
+.container-image-banner-content {
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    background-color: #000000;
+    top: 53px;
+    opacity: 85%;
+    z-index: -1111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-image {
+    position: absolute;
+    top: 50px;
+    height: 40vh;
+    width: 100%;
+    background-image: url('/assets/img/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -2222;
+    
+}
+
+.title-content-image {
+    color: var(--secundary-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.content-image {
+    color: var(--secundary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* configurado primeiro informativo de serviços prestados*/
+
+.container-flags-information {
+    position: absolute;
+    top: 312px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: -5;
+}
+
+.container-content-flag {
+    text-align: center;
+    padding-top: 3rem;
+    font-size: .75rem;
+    display: inline-block;
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-content-flag i {
+    font-size: 1.2rem;
+}
+
+.bi-shield-shaded {
+    color: var(--tertiary-color)
+}
+
+.bi-rocket-takeoff-fill {
+    color: var(--quaternary-color);
+}
+
+.bi-wechat {
+    color: var( --sextiary-color);
+}
+
+/* Configuração do segundo conteudo de seleção */
+
+.container-flag-selection {
+    position: absolute;
+    top: 425px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    z-index: -5;
+}
+
+.title-selection {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.title-content-selection {
+    font-size: .75rem;
+}
+
+/* Configuração dos items de seleção */
+
+.main-container-content-items {
+    width: 100%;
+    position: absolute;
+    top: 526px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 4rem;
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.first-container-item {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}

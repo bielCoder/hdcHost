@@ -1,0 +1,110 @@
+
+
+
+.container-navbar-header {
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-logo {
+    width: 35px;
+    height: 35px;
+    background-image: url('/assets/img/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: .55rem;
+    margin-bottom: .55rem;
+    margin-left: .55rem;
+}
+
+.menu-list {
+    color: var(--secundary-color);
+    display: flex;
+}
+
+.menu-list li {
+    list-style: none;
+    margin-right: .75rem;
+    font-size: .95rem;
+    display: flex;
+    text-transform: uppercase;
+}
+
+a {
+    color: var(--secundary-color);
+    text-decoration: none;
+    padding: .5rem;
+}
+
+.login-btn {
+    background-color: rgb(44, 206, 111);
+    border-radius: 7%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.bi-list {
+    display: none;
+}
+
+.container-navbar-header-responsive {
+    display: none;
+}
+
+.btn-login {
+    background-color: lawngreen;
+}
+
+
+/* mobile */
+@media screen and (max-width: 768px)
+{
+    .menu-list li{
+        display: none;
+    }
+
+    .bi-list {
+        display: block;
+        color: var(--secundary-color);
+        margin-right: .55rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    .container-navbar-header-responsive{
+        background-color: var(--primary-color);
+        color: transparent;
+        width: 100%;
+        height: 0vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        transition: all .5s ease-in;
+        z-index: 9999;  
+    }
+
+    .menu-list-responsive li{
+        list-style: none;
+        margin-bottom: 2rem;
+        text-align: center;
+        padding: .75rem;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    .show {
+        color: var(--secundary-color);
+        width: 100%;
+        height: 100vh;
+        overflow: visible;
+        transition: all .5s ease-in-out;
+        z-index: 9999;
+    }
+}

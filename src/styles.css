@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+:root {
+    --primary-color: #192d30;
+    --secundary-color: #fff;
+    --tertiary-color: #15c93f;
+    --quaternary-color:#cb0000;
+    --quinternary-color: #000;
+    --sextiary-color: #eca80a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+

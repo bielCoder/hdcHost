@@ -1,0 +1,21 @@
+<header>
+    <div class="container-navbar-header">
+       <div class="main-logo"></div>
+       <ul class="menu-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Planos</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#" class="login-btn">Login</a></li>
+       </ul>
+       <i class="bi bi-list" (click)="onShowHide()"></i>
+    </div>
+    <!-- Menu Responsive -->
+    <div class="container-navbar-header-responsive" [class.show]="showHide">
+        <ul class="menu-list-responsive">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Planos</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#" class="login-btn">Login</a></li>
+        </ul>
+    </div>
+</header>
