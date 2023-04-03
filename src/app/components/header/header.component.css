@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .main-logo {
@@ -24,6 +25,8 @@
 .menu-list {
     color: var(--secundary-color);
     display: flex;
+    align-items: center;
+    padding-top: 1rem;
 }
 
 .menu-list li {
@@ -41,7 +44,7 @@ a {
 }
 
 .login-btn {
-    background-color: rgb(44, 206, 111);
+    background-color: var(--tertiary-color);
     border-radius: 7%;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -55,9 +58,7 @@ a {
     display: none;
 }
 
-.btn-login {
-    background-color: lawngreen;
-}
+
 
 
 /* mobile */
@@ -87,7 +88,8 @@ a {
         align-items: center;
         font-size: 1.2rem;
         transition: all .5s ease-in;
-        z-index: 9999;  
+        z-index: 9999;
+        position: relative;
     }
 
     .menu-list-responsive li{
@@ -97,6 +99,7 @@ a {
         padding: .75rem;
         cursor: pointer;
         z-index: 9999;
+        position: relative;
     }
 
     .show {

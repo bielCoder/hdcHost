@@ -5,10 +5,25 @@
 :root {
     --primary-color: #192d30;
     --secundary-color: #fff;
-    --tertiary-color: #15c93f;
-    --quaternary-color:#cb0000;
+    --tertiary-color: #75de9f;
+    --quaternary-color:#e45959;
     --quinternary-color: #000;
     --sextiary-color: #eca80a;
+    --seventiary-color: #e3e3e3;
+    --octonary-color: #82e3a9;
+    --ninetiary-color: #de6666;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ .container-scroll{
+    display: block;
+}
+
+body {
+    margin-bottom: 80rem;
 }
 
 *{

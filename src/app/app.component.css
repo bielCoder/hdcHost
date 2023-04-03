@@ -1,0 +1,382 @@
+/* Configurando o primeiro conteudo (banner) */
+
+.container-image-banner-content {
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    background-color: #000000;
+    top: 53px;
+    opacity: 85%;
+    z-index: -1111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-image {
+    position: absolute;
+    top: 50px;
+    height: 40vh;
+    width: 100%;
+    background-image: url('/assets/img/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -2222;
+    
+}
+
+.title-content-image {
+    color: var(--secundary-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.content-image {
+    color: var(--secundary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* configurado primeiro informativo de serviços prestados*/
+
+.container-flags-information {
+    position: relative;
+    top: 14rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: -5;
+    margin-top: 5em;
+}
+
+.container-content-flag {
+    text-align: center;
+    font-size: .75rem;
+    display: inline-block;
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-content-flag i {
+    font-size: 1.2rem;
+}
+
+.bi-shield-shaded {
+    color: var(--tertiary-color)
+}
+
+.bi-rocket-takeoff-fill {
+    color: var(--quaternary-color);
+}
+
+.bi-wechat {
+    color: var( --sextiary-color);
+}
+
+/* Configuração do segundo conteudo de seleção */
+
+.container-flag-selection {
+    position: absolute;
+    top: 425px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    z-index: -5;
+}
+
+.title-selection {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.title-content-selection {
+    font-size: .75rem;
+}
+
+/* Configuração dos items de seleção */
+
+.main-container-content-items {
+    width: 100%;
+    position: absolute;
+    top: 526px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 4rem;
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+
+.first-container-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-right: 1em;
+}
+
+.content-price {
+    background-color: var(--tertiary-color);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--secundary-color);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 3em;
+    font-size: .75rem;
+    font-weight: lighter;
+}
+
+.title-first-item {
+    background-color: var(--primary-color);
+    padding: 2.5em;
+    font-weight: bold;
+    color: var(--secundary-color);
+}
+
+.title {
+    position: relative;
+    top: 0px;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    text-transform: uppercase;
+    font-size: .95em;
+
+}
+
+.main-content-item {
+    background-color: var(--seventiary-color);
+}
+
+.main-content-item li {
+    list-style: none;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: .75rem;
+}
+
+.list {
+    padding: 0;
+}
+
+.btn-selection {
+    padding: 1rem;
+    border: none;
+    background-color: var(--tertiary-color);
+    font-size: 1em;
+    color: var(--secundary-color);
+    cursor: pointer;
+}
+
+.btn-selection:hover {
+    background-color: var(--octonary-color);
+}
+
+.hover:hover {
+    background-color: var(--ninetiary-color);
+}
+
+.first-content {
+    background-color: var(--quaternary-color);
+}
+
+/* Aqui está sendo confugurado o container de busca e todos os seus components */
+
+.container-domain-search {
+    position: relative;
+    bottom: -8rem;
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3.8rem;
+    justify-content: center;
+}
+
+.title-search-domain {
+    font-size: 1.2rem;
+    font-weight: bold;
+    word-spacing: .2em;
+    margin-bottom: .5em;
+    position: relative;
+    top:-1em;
+}
+
+.text-content-search-domain {
+    font-size: .75rem;
+    font-weight: lighter;
+    word-spacing: .2em;
+    margin-bottom: .5em;
+    position: relative;
+    top: -1em;
+}
+
+.text-area {
+    width: 50%;
+    height: 7.5vh;
+    outline: none;
+    border-radius: .2em;
+    border-color: transparent;
+    margin-bottom: 1em;
+    padding-left: .8em;
+}
+
+.btn-search {
+    padding:.4rem 1.4rem 0.4rem 1.4rem;
+    text-align: center;
+    background-color: var(--tertiary-color);
+    border: .0625rem solid var(--tertiary-color);
+    border-radius: .1rem;
+    color: var(--secundary-color);
+    font-size: .75rem;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.btn-search:hover {
+    background-color: var(--octonary-color);
+}
+
+/* Configuração do contato */
+.container-contact-forms {
+    position: relative;
+    top: 15rem;
+}
+
+
+.title-form {
+    font-size: 1.2em;
+    font-weight: bold;
+    
+}
+
+.container-child-form {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+textarea {
+    position: relative;
+    top: 2.4em;
+    width: 91%;
+    left: .7rem;
+    margin-top: 1em;
+}
+
+.btn-contact{
+    padding: 0.4rem 1.4rem 0.4rem 1.4rem;
+    text-align: center;
+    background-color: var(--tertiary-color);
+    border: 0.0625rem solid var(--tertiary-color);
+    border-radius: 0.1rem;
+    color: var(--secundary-color);
+    font-size: .75rem;
+    font-weight: lighter;
+    cursor: pointer;
+    position: absolute;
+    top: 16.8rem;
+    width: 95%;
+    left: 0rem;
+    margin-top: 1em;
+}
+
+.content-form-contact {
+    font-size: .75rem;
+}
+
+.container-scroll {
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    padding-top: .8em;
+}
+
+.container-scroll a {
+    color: var(--secundary-color);
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+    border-radius: 100%;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px)
+{
+    .container-flags-information {
+        position: absolute;
+        top: 0px;
+        top: 17.5rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: -5;
+        margin-top: 5em;
+    }
+
+.text-area {
+    width: 101%;
+    height: 7.5vh;
+    outline: none;
+    border-radius: 0.2em;
+    border-color: transparent;
+    margin-bottom: 1em;
+    padding-left: 0em;
+}
+
+
+    textarea {
+        position: relative;
+        top: 2.4em;
+        width: 85.95%;
+        left: 0.75rem;
+        margin-top: 1em;
+    }
+    
+    .btn-contact{
+        padding: 0.4rem 1.4rem 0.4rem 1.4rem;
+        text-align: center;
+        background-color: var(--tertiary-color);
+        border: 0.0625rem solid var(--tertiary-color);
+        border-radius: 0.1rem;
+        color: var(--secundary-color);
+        font-size: .75rem;
+        font-weight: lighter;
+        cursor: pointer;
+        position: relative;
+        top: 2.8rem;
+        width: 85.4%;
+        left: 0.7rem;
+    }
+}

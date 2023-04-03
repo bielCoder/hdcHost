@@ -1,4 +1,163 @@
 <!-- Aqui está sendo configurado o header do sistema,onde é constituido de barra e menu para navegação -->
-<app-header></app-header>
+<app-header [information]="information" [informationTwo]="informationTwo" [informationThree]="informationThree"></app-header>
+
 <!-- Aqui está sendo configurado o conteúdo principal -->
-<app-content></app-content>
+<!-- first content banner image -->
+<section id="informatioThree" #informatioThree>
+<div class="container-image-banner-content">
+    <p class="title-content-image">HDC Host</p>
+    <p class="content-image">Os melhores planos para qualquer tipo de projeto!</p>
+</div>
+<div class="container-image"></div>
+</section>
+
+<!-- Aqui está sendo configurado três primeiros informativos -->
+
+<div class="container-flags-information">
+    <div class="container-content-flag">
+        <i class="bi bi-shield-shaded"></i>
+        <p class="title-information">Segurança</p>
+        <p class="content-information">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="container-content-flag">
+        <i class="bi bi-rocket-takeoff-fill"></i>
+        <p class="title-information">Segurança</p>
+        <p class="content-information">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="container-content-flag">
+        <i class="bi bi-wechat"></i>
+        <p class="title-information">Segurança</p>
+        <p class="content-information">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+</div>
+
+
+<!-- Configuração do titulo de seleção -->
+
+<section id="informationTwo" #informationTwo>
+<div class="container-flag-selection">
+    <h3>
+        Planos e Preços
+    </h3>
+    <p class="title-content-selection">
+        Selecione o plano perfeito para você
+    </p>
+</div>
+</section>
+
+<!-- Configuração do items de seleção -->
+
+<div class="main-container-content-items">
+    <div class="first-container-item">
+        <div class="content-price" [class.first-content]="firstStyle">
+            R$15/mês
+        </div>
+        <div class="title-first-item">
+            <p class="title">Padrão</p>
+        </div>
+        <div class="main-content-item">
+            <ul class="list">
+                <li>2GB de espaço em disco</li>
+                <li>10 Sub-domínio</li>
+                <li>25 Contas de e-mail</li>
+                <li>C-Panel</li>
+                <li>Suporte 24/7</li>
+            </ul>
+        </div>
+        <button class="btn-selection" [class.first-content]="firstStyle" (click)="firstMover()" [class.hover]="hover" (mouseover)="hoverMuda()" #firstBtn >Selecionar</button>
+    </div>
+
+    <div class="first-container-item">
+        <div class="content-price" [class.first-content]="secondStyle">
+            R$30/mês
+        </div>
+        <div class="title-first-item">
+            <p class="title">Dedicado</p>
+        </div>
+        <div class="main-content-item">
+            <ul class="list">
+                <li>2GB de espaço em disco</li>
+                <li>10 Sub-domínio</li>
+                <li>25 Contas de e-mail</li>
+                <li>C-Panel</li>
+                <li>Suporte 24/7</li>
+            </ul>
+        </div>
+        <button class="btn-selection" [class.first-content]="secondStyle" (click)="secondMover()"  [class.hover]="hoverTwo" (mouseover)="hoverMudaTwo()" #secondBtn>Selecionar</button>
+    </div>
+
+    <div class="first-container-item">
+        <div class="content-price" [class.first-content]="thirdStyle">
+            R$15/mês
+        </div>
+        <div class="title-first-item">
+            <p class="title">Padrão</p>
+        </div>
+        <div class="main-content-item">
+            <ul class="list">
+                <li>2GB de espaço em disco</li>
+                <li>10 Sub-domínio</li>
+                <li>25 Contas de e-mail</li>
+                <li>C-Panel</li>
+                <li>Suporte 24/7</li>
+            </ul>
+        </div>
+        <button class="btn-selection"  [class.hover]="hoverThree" (mouseover)="hoverMudaThree()"  [class.first-content]="thirdStyle" #thirdBtn (click)="thirdMover()">Selecionar</button>
+    </div>
+
+    <div class="first-container-item" >
+        <div class="content-price"  [class.first-content]="fourthStyle">
+            R$15/mês
+        </div>
+        <div class="title-first-item" >
+            <p class="title">Padrão</p>
+        </div>
+        <div class="main-content-item">
+            <ul class="list">
+                <li>2GB de espaço em disco</li>
+                <li>10 Sub-domínio</li>
+                <li>25 Contas de e-mail</li>
+                <li>C-Panel</li>
+                <li>Suporte 24/7</li>
+            </ul>
+        </div>
+        <button class="btn-selection" [class.first-content]="fourthStyle"  #fourthBtn (click)="fourthMover()" [class.hover]="hoverFour" (mouseover)="hoverMudaFour()">Selecionar</button>
+    </div>
+
+
+
+
+    <!-- configuração da parte de busca de dominio -->
+    <div class="container-domain-search container-fluid">
+        <p class="title-search-domain">Buscar um Domínio</p>
+        <p class="text-content-search-domain">Veja se o domínio que você deseja está disponível</p>
+        <form>
+            <input type="text" class="text-area" placeholder="Digite seu domínio desejado"><br>
+            <button class="btn-search">Buscar Domínio</button>
+        </form>
+    </div>
+
+    <!-- configuração da parte de contatos -->
+    <section id="information" #information>
+    <div class="container-contact-forms">
+        <p class="title-form">Entre em Contato</p>
+        <p class="content-form-contact">
+            Mande uma mensagem para nós conversarmos sobre a melhor hospedagem para seu negócio
+        </p>
+        <form>
+        <div class="container-form row">
+            <div class="container-child-form col-md-12 ">
+            <input type="text" name="nome" class="form-control me-3" placeholder="Seu nome">
+            <input type="text" name="email" class="form-control" placeholder="Seu e-mail">
+            </div>
+            <textarea name="" id="" cols="2" rows="5" class="form-control" placeholder=" Digite sua mensagem"></textarea>
+            <button class="btn-contact">Enviar</button>
+        </div>
+        </form>
+    </div>
+    </section>
+    <div class="container-scroll">
+        <a href="#{{idThree}}"><i class="bi bi-arrow-bar-up"></i></a>
+    </div>
+   <!-- Aqui está sendo configurado o rodapé -->
+<app-footer></app-footer>
