@@ -84,7 +84,7 @@
 
 .container-flag-selection {
     position: absolute;
-    top: 425px;
+    top: 471px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -335,14 +335,14 @@ textarea {
 {
     .container-flags-information {
         position: absolute;
-        top: 0px;
+     
         top: 17.5rem;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         z-index: -5;
-        margin-top: 5em;
+        margin-top: 6em;
     }
 
 .text-area {
